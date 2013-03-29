@@ -1,0 +1,31 @@
+
+Shift object - 2 DateTimes, calculate difference between the two
+
+Pay Period, list of DateTimes, add up the hours & minutes. This class should have 
+save/load functionality. 
+
+Need to be able to add a date range, beginning date and ending date has to not be 
+within other pay period date ranges already made
+
+Next up, need to fix error messages for adding a shift, currently all errors display
+at end of shift text box.Also, a pay period cannot have its dates adjusted as is.
+
+Changing a pay period
+ must remove shifts to proceed, use messagebox with options confirming choice
+
+To update a pay period - Need to check if it would be acceptable to perform update,
+  loop through list of payperiods. If transaction is selected transaction - continue
+if pay period 
+
+ 
+
+bool validUpdate(PayPeriod payPeriod,DateTime start, DateTime end)
+bool validFlag = true
+foreach PayPeriod listPayPeriod in List)
+    if payperiod == listPayPeriod
+         continue
+    if start >= listPayPeriod.Start && start < listPayPeriod.End
+        validFlag = false
+    if end <= listPayPeriod.End && end > listPayPeriod.Start
+        validFlag = false
+return validFlag
